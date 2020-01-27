@@ -1,0 +1,17 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontSize": 12,
+    "editor.wordWrapColumn": 100,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "none",
+    "svn.enableProposedApi": "none",
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "monokai-best"
+}
