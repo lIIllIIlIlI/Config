@@ -11,7 +11,7 @@
             "program": "C:\\Projects\\3PP\\04_SwBuild\\BuildTools\\Bob\\Bob.py",
             "args": [
                 "-v",
-                "E179_EOP_Renault",
+                "variant",
                 "-i",
                 "Xcp"
             ],
@@ -24,7 +24,7 @@
             "program": "C:\\Projects\\3PP\\04_SwBuild\\BuildTools\\Bob\\Bob.py",
             "args": [
                 "-v",
-                "E192_HRB",
+                "variant",
                 "-i",
                 "Xcp"
             ],
