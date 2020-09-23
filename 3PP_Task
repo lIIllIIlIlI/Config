@@ -10,7 +10,7 @@
             "args": [
                 "Bob.py",
                 "-v",
-                "E173_CWP150_BMW",
+                "variant",
                 "-i",
                 "Customer"
             ],
@@ -30,7 +30,7 @@
             "args": [
                 "Bob.py",
                 "-v",
-                "E173_CWP150_BMW",
+                "variant",
                 "-i",
                 "Customer",
                 "--memprof"
@@ -51,7 +51,7 @@
             "args": [
                 "Bob.py",
                 "-v",
-                "E173_CWP150_BMW",
+                "variant",
                 "-i",
                 "Xcp"
             ],
@@ -71,7 +71,7 @@
             "args": [
                 "Bob.py",
                 "-v",
-                "E192_HRB",
+                "variant",
                 "-i",
                 "Xcp"
             ],
@@ -91,8 +91,8 @@
             "args": [
                 "Bob.py",
                 "-v",
-                "E192_HRB",
-                "E173_CWP150_BMW",
+                "variant",
+                "variant",
                 "-i",
                 "Xcp",
                 "Customer"
