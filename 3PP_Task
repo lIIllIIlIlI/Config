@@ -1,0 +1,110 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Tle default",
+            "type": "shell",
+            "command": "py",
+            "args": [
+                "Bob.py",
+                "-v",
+                "E173_CWP150_BMW",
+                "-i",
+                "Customer"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "MemProf Tle default",
+            "type": "shell",
+            "command": "py",
+            "args": [
+                "Bob.py",
+                "-v",
+                "E173_CWP150_BMW",
+                "-i",
+                "Customer",
+                "--memprof"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Tle a2l default",
+            "type": "shell",
+            "command": "py",
+            "args": [
+                "Bob.py",
+                "-v",
+                "E173_CWP150_BMW",
+                "-i",
+                "Xcp"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "dsPIC a2l default",
+            "type": "shell",
+            "command": "py",
+            "args": [
+                "Bob.py",
+                "-v",
+                "E192_HRB",
+                "-i",
+                "Xcp"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Release test",
+            "type": "shell",
+            "command": "py",
+            "args": [
+                "Bob.py",
+                "-v",
+                "E192_HRB",
+                "E173_CWP150_BMW",
+                "-i",
+                "Xcp",
+                "Customer"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
