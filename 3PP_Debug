@@ -11,7 +11,7 @@
             "program": "C:\\Projects\\3PP\\04_SwBuild\\BuildTools\\Bob\\Bob.py",
             "args": [
                 "-v",
-                "variant",
+                "E179_EOP_Renault",
                 "-i",
                 "Xcp"
             ],
@@ -24,7 +24,21 @@
             "program": "C:\\Projects\\3PP\\04_SwBuild\\BuildTools\\Bob\\Bob.py",
             "args": [
                 "-v",
-                "variant",
+                "E192_HRB",
+                "-i",
+                "Xcp"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "all, Xcp",
+            "type": "python",
+            "request": "launch",
+            "program": "C:\\Projects\\3PP\\04_SwBuild\\BuildTools\\Bob\\Bob.py",
+            "args": [
+                "-v",
+                "E192_HRB",
+                "E173_CWP150_BMW",
                 "-i",
                 "Xcp"
             ],
@@ -32,4 +46,3 @@
         }
 
     ]
-}
