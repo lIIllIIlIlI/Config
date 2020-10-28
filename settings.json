@@ -1,4 +1,5 @@
 {
+    "files.trimTrailingWhitespace": true,
     "window.zoomLevel": 0,
     "editor.fontSize": 12,
     "editor.wordWrapColumn": 100,
@@ -13,5 +14,31 @@
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.statusBar.visible": false,
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "monokai-best"
+    "workbench.colorTheme": "monokai-best",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "extensions.ignoreRecommendations": true,
+    "window.menuBarVisibility": "default",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.languageServer": "Microsoft",
+    "python.defaultInterpreterPath": "C:\\Spezial\\WinPython\\python-3.7.4.amd64\\python.exe",
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyArgs": [
+        "--ignore-missing-imports",
+        "--follow-imports=silent",
+        "--show-column-numbers",
+        "--max-line-length=100",
+        "disable=E25"
+    ],
+    "python.linting.flake8Path": "c:\\spezial\\python\\python36\\lib\\site-packages",
+    "python.formatting.autopep8Args": [
+        "--aggressive",
+        "--in-place"
+    ],
+    "python.formatting.autopep8Path": "C:\\Spezial\\WinPython\\python-3.7.4.amd64\\Lib\\site-packages\\autopep8.py",
+    "todo-tree.tree.showScanModeButton": false,
+    "files.autoSave": "afterDelay"
 }
