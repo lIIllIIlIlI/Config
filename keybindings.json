@@ -15,7 +15,7 @@
         "command": "python.execInTerminal"
     },
     {
-        "key": "alt+win+right",
+        "key": "ctrl+alt+win+right",
         "command": "workbench.action.moveEditorToNextGroup"
     },
     {
@@ -23,16 +23,12 @@
         "command": "-workbench.action.moveEditorToNextGroup"
     },
     {
-        "key": "alt+win+left",
+        "key": "ctrl+alt+win+left",
         "command": "workbench.action.moveEditorToPreviousGroup"
     },
     {
         "key": "ctrl+alt+left",
         "command": "-workbench.action.moveEditorToPreviousGroup"
-    },
-    {
-        "key": "ctrl+alt+oem_3",
-        "command": "bookmarks.list"
     },
     {
         "key": "ctrl+alt+m",
@@ -90,5 +86,53 @@
     {
         "key": "ctrl+shift+alt+u",
         "command": "workbench.action.openWorkspace"
+    },
+    {
+        "key": "ctrl+shift+oem_3",
+        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+i",
+        "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+oem_3",
+        "command": "bookmarks.list"
+    },
+    {
+        "key": "shift+alt+win+right",
+        "command": "workbench.action.positionPanelLeft"
+    },
+    {
+        "key": "alt+win+left",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+left",
+        "command": "-workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "alt+win+right",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+right",
+        "command": "-workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     }
 ]
