@@ -1,4 +1,5 @@
-{
+[
+    {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "2.0.0",
@@ -10,9 +11,29 @@
             "args": [
                 "Bob.py",
                 "-v",
-                "variant",
+                "E173_CWP150_BMW",
                 "-i",
                 "Customer"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Modultests NvM",
+            "type": "shell",
+            "command": "ruby",
+            "args": [
+                "vendor\\ceedling\\bin\\ceedling",
+                "project:E132_eCC_400V",
+                "clobber",
+                "gcov:pattern[NvM_]",
+                "utils:gcov"
             ],
             "options": {
                 "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
@@ -30,7 +51,7 @@
             "args": [
                 "Bob.py",
                 "-v",
-                "variant",
+                "E173_CWP150_BMW",
                 "-i",
                 "Customer",
                 "--memprof"
@@ -51,7 +72,7 @@
             "args": [
                 "Bob.py",
                 "-v",
-                "variant",
+                "E173_CWP150_BMW",
                 "-i",
                 "Xcp"
             ],
@@ -71,7 +92,7 @@
             "args": [
                 "Bob.py",
                 "-v",
-                "variant",
+                "E192_HRB",
                 "-i",
                 "Xcp"
             ],
@@ -91,8 +112,28 @@
             "args": [
                 "Bob.py",
                 "-v",
-                "variant",
-                "variant",
+                "E173_CWP150_BMW",
+                "E192_HRB",
+                "-i",
+                "Xcp",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "-v all",
+            "type": "shell",
+            "command": "py",
+            "args": [
+                "Bob.py",
+                "-v",
+                "all",
                 "-i",
                 "Xcp",
                 "Customer"
@@ -106,5 +147,4 @@
             },
             "problemMatcher": "$msCompile"
         }
-    ]
-}
+]
