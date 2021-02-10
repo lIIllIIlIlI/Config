@@ -1,6 +1,4 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks":
     [
@@ -11,7 +9,7 @@
             "args": [
                 "Bob.py",
                 "-v",
-                "E173_CWP150_BMW",
+                "E179_EOP_Renault",
                 "-i",
                 "Customer"
             ],
@@ -20,73 +18,36 @@
             },
             "group": "build",
             "presentation": {
-                "reveal": "silent"
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
             },
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
         },
         {
-            "label": "Modultests NvM",
-            "type": "shell",
-            "command": "ruby",
-            "args": [
-                "vendor\\ceedling\\bin\\ceedling",
-                "project:E132_eCC_400V",
-                "clobber",
-                "gcov:pattern[NvM_]",
-                "utils:gcov"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
-            },
-            "group": "build",
-            "presentation": {
-                "reveal": "silent"
-            },
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "MemProf Tle default",
+            "label": "Tle tools",
             "type": "shell",
             "command": "py",
             "args": [
                 "Bob.py",
                 "-v",
-                "E173_CWP150_BMW",
+                "E179_EOP_Renault",
                 "-i",
-                "Customer",
+                "Xcp",
                 "--memprof"
             ],
             "options": {
                 "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
             },
-            "group": "build",
             "presentation": {
-                "reveal": "silent"
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
             },
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "Tle a2l default",
-            "type": "shell",
-            "command": "py",
-            "args": [
-                "Bob.py",
-                "-v",
-                "E173_CWP150_BMW",
-                "-i",
-                "Xcp"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
-            },
-            "group": "build",
-            "presentation": {
-                "reveal": "silent"
-            },
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "dsPIC a2l default",
+            "label": "dsPIC default",
             "type": "shell",
             "command": "py",
             "args": [
@@ -94,14 +55,39 @@
                 "-v",
                 "E192_HRB",
                 "-i",
-                "Xcp"
+                "Customer"
             ],
             "options": {
                 "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
             },
             "group": "build",
             "presentation": {
-                "reveal": "silent"
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "dsPIC tools",
+            "type": "shell",
+            "command": "py",
+            "args": [
+                "Bob.py",
+                "-v",
+                "E192_HRB",
+                "-i",
+                "Xcp",
+                "--memprof"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
             },
             "problemMatcher": "$msCompile"
         },
@@ -112,40 +98,103 @@
             "args": [
                 "Bob.py",
                 "-v",
-                "E173_CWP150_BMW",
+                "E179_EOP_Renault",
                 "E192_HRB",
                 "-i",
                 "Xcp",
+                "--memprof"
             ],
             "options": {
                 "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
             },
             "group": "build",
             "presentation": {
-                "reveal": "silent"
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
             },
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "-v all",
+            "label": "RunTime build",
             "type": "shell",
             "command": "py",
             "args": [
                 "Bob.py",
                 "-v",
-                "all",
+                "E182_CWP250_Audi",
+                "E170_CWA950_48V_PPT",
                 "-i",
-                "Xcp",
-                "Customer"
+                "RunTimeMonitor",
             ],
             "options": {
                 "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
             },
             "group": "build",
             "presentation": {
-                "reveal": "silent"
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
             },
             "problemMatcher": "$msCompile"
-        }
+        },
+        {
+            "label": "Modultests dsPIC",
+            "type": "shell",
+            "command": "ruby",
+            "args": [
+                "vendor\\ceedling\\bin\\ceedling",
+                "project:E192_HRB",
+                "clobber",
+                "gcov:NvM_Generic",
+                "gcov:Fee_Generic",
+                "gcov:MemIf_Generic",
+                "gcov:Det_Generic",
+                "gcov:Profiler_Generic",
+                "gcov:Fls_Generic",
+                "gcov:FlsTst_Generic",
+                "gcov:RamTst_Generic",
+                "utils:gcov"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\06_SwModuleTest\\Ceedling"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Modultests Tle",
+            "type": "shell",
+            "command": "ruby",
+            "args": [
+                "vendor\\ceedling\\bin\\ceedling",
+                "project:E179_EOP_Renault",
+                "clobber",
+                "gcov:NvM_Generic",
+                "gcov:Fee_Generic",
+                "gcov:MemIf_Generic",
+                "gcov:Det_Generic",
+                "gcov:Profiler_Generic",
+                "gcov:Fls_Generic",
+                "gcov:FlsTst_Generic",
+                "gcov:RamTst_Generic",
+                "utils:gcov"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\06_SwModuleTest\\Ceedling"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": "$msCompile"
+        },
     ]
 }
