@@ -13,7 +13,8 @@
                 "-v",
                 "E179_EOP_Renault",
                 "-i",
-                "Customer"
+                "Customer",
+                "--skipchecks"
             ],
             "options": {
                 "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
@@ -36,6 +37,7 @@
                 "E179_EOP_Renault",
                 "-i",
                 "Xcp",
+                "--skipchecks",
                 "--memprof"
             ],
             "options": {
@@ -57,7 +59,8 @@
                 "-v",
                 "E192_HRB",
                 "-i",
-                "Customer"
+                "Customer",
+                "--skipchecks"
             ],
             "options": {
                 "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
@@ -80,7 +83,8 @@
                 "E192_HRB",
                 "-i",
                 "Xcp",
-                "--memprof"
+                "--memprof",
+                "--skipchecks"
             ],
             "options": {
                 "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
@@ -104,7 +108,8 @@
                 "E192_HRB",
                 "-i",
                 "Xcp",
-                "--memprof"
+                "--memprof",
+                "--skipchecks"
             ],
             "options": {
                 "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
@@ -128,6 +133,7 @@
                 "E170_CWA950_48V_PPT",
                 "-i",
                 "RunTimeMonitor",
+                "--skipchecks"
             ],
             "options": {
                 "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
