@@ -14,7 +14,8 @@
                 "-v",
                 "E179_EOP_Renault",
                 "-i",
-                "Xcp"
+                "Xcp",
+                "--skipchecks"
             ],
             "console": "integratedTerminal"
         },
@@ -27,7 +28,8 @@
                 "-v",
                 "E192_HRB",
                 "-i",
-                "Xcp"
+                "Xcp",
+                "--skipchecks"
             ],
             "console": "integratedTerminal"
         },
@@ -41,7 +43,8 @@
                 "E192_HRB",
                 "E173_CWP150_BMW",
                 "-i",
-                "Xcp"
+                "Xcp",
+                "--skipchecks"
             ],
             "console": "integratedTerminal"
         }
