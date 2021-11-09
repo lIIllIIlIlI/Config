@@ -1,17 +1,15 @@
-// C:\Users\CA69217\AppData\Roaming\Code\User\tasks.json available in all projects
-// C:\Projects\3PP\Iteration\.vscode\tasks.json available only in current project
 {
     "version": "2.0.0",
     "tasks":
     [
         {
-            "label": "Tle E179_EOP_Renault",
+            "label": "Tle E197_WUP4_80W Customer",
             "type": "shell",
             "command": "python",
             "args": [
                 "Bob.py",
                 "-v",
-                "E179_EOP_Renault",
+                "E197_WUP4_80W",
                 "-i",
                 "Customer",
                 "--skipchecks"
@@ -28,15 +26,15 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "Tle E179_EOP_Renault a2l",
+            "label": "Tle E197_WUP4_80W Xcp_Uart",
             "type": "shell",
             "command": "python",
             "args": [
                 "Bob.py",
                 "-v",
-                "E179_EOP_Renault",
+                "E197_WUP4_80W",
                 "-i",
-                "Xcp",
+                "Xcp_Uart",
                 "--skipchecks"
             ],
             "options": {
@@ -51,30 +49,7 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "Tle tools",
-            "type": "shell",
-            "command": "python",
-            "args": [
-                "Bob.py",
-                "-v",
-                "E179_EOP_Renault",
-                "-i",
-                "Xcp",
-                "--skipchecks",
-                "--memprof"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared",
-                "clear": true
-            },
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "dsPIC default",
+            "label": "dsPIC E192_HRB Customer",
             "type": "shell",
             "command": "python",
             "args": [
@@ -97,7 +72,7 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "dsPIC tools",
+            "label": "dsPIC E192_HRB Xcp_Uart",
             "type": "shell",
             "command": "python",
             "args": [
@@ -105,7 +80,7 @@
                 "-v",
                 "E192_HRB",
                 "-i",
-                "Xcp",
+                "Xcp_Uart",
                 "--memprof",
                 "--skipchecks"
             ],
@@ -128,34 +103,11 @@
                 "Bob.py",
                 "-v",
                 "E179_EOP_Renault",
-                "E192_HRB",
+                "E197_WUP4_80W",
                 "-i",
-                "Xcp",
+                "Xcp_Uart",
+				"Customer",
                 "--memprof",
-                "--skipchecks"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}\\04_SwBuild\\BuildTools\\Bob"
-            },
-            "group": "build",
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared",
-                "clear": true
-            },
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "RunTime build",
-            "type": "shell",
-            "command": "python",
-            "args": [
-                "Bob.py",
-                "-v",
-                "E182_CWP250_Audi",
-                "E170_CWA950_48V_PPT",
-                "-i",
-                "RunTimeMonitor",
                 "--skipchecks"
             ],
             "options": {
